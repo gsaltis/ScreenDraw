@@ -1,0 +1,276 @@
+:root {
+    --GeneralBorder                     : solid 1px #000;
+    --GeneralBackgroundLight            : #FBFCFC;
+    --GeneralBackgroundMedium           : #DDD;
+    --GeneralBackgroundMediumDark       : #CCC;
+    --GeneralBackgroundDark             : #AAA;
+    --GeneralBackgroundDarker           : #888;
+    --GeneralFontColor                  : #222;
+    --GeneralFontColorLight             : #EEE;
+    --GeneralFontName                   : Segoe UI;
+    --GeneralFontSize                   : 10pt;
+    --HeaderHeightSmall                 : 20px;
+}
+
+.PushButton {
+    position                            : absolute;
+    height                              : 16px;
+    width                               : 60px;
+    border                              : var(--GeneralBorder);
+    border-radius                       : 4px;
+    font-family                         : Segoe UI;
+    font-size                           : 10pt;
+    font-weight                         : 500;
+    text-align                          : center;
+    line-height                         : 16px;
+    vertical-align                      : middle;
+    color                               : white;
+    background                          : var(--GeneralBackgroundDarker);
+    cursor                              : hand;
+}
+
+.PushButton:hover {
+    box-shadow                          : 0px 3px 8px rgb(0, 0, 0, .6);
+    background                          : var(--GeneralBackgroundMediumDark);
+}
+
+.ShowListElement {
+    position                            : absolute;
+    left                                : 0px;
+    background                          : var(--GeneralBackgroundMedium);
+    color                               : var(--GeneralFontColor);
+    font-family                         : var(--GeneralFontName);
+    font-size                           : var(--GeneralFontSize);
+    border-bottom                       : var(--GeneralBorder);
+}
+
+.ShowListElementName {
+    width                               : 150px;
+    font-weight                         : bold;
+    border-right                        : var(--GeneralBorder);
+    text-align                          : right;
+    padding-right                       : 5px;
+}
+
+.ShowListElementValue {
+    right                               : 0px;
+    left                                : 157px;
+    padding-right                       : 5px;
+    text-align                          : left;
+}
+
+.HeaderSmall {
+    position                            : absolute;
+    top                                 : 0px;
+    left                                : 0px;
+    background                          : var(--GeneralBackgroundDark);
+    text-align                          : left;
+    padding-left                        : 10px;
+    width                               : calc(100%  - 10px);
+    font-family                         : Segoe UI;
+    font-size                           : 10pt;
+    font-weight                         : bold;
+    vertical-align                      : center;
+    border-bottom                       : var(--GeneralBorder);
+    height                              : var(--HeaderHeightSmall);
+}
+
+.HeaderTemp {
+    background                          : var(--GeneralBackgroundDarker);
+}
+
+#MainBody {
+    position                            : absolute;
+    top                                 : 10px;
+    left                                : 10px;
+    right                               : 10px;
+    top                                 : 10px;
+    bottom                              : 20px;
+    background                          : var(--GeneralBackgroundLight);
+    border-radius                       : 15px;
+}
+
+#MainMessageArea {
+    position                            : absolute;
+    height                              : 20px;
+    bottom                              : 5px;
+    left                                : 10px;
+    right                               : 10px;
+    border                              : var(--GeneralBorder);
+    color                               : var(--GeneralFontColor);
+    font-family                         : Segoe UI;
+    font-size                           : 11pt;
+    font-weight                         : 600;
+    padding-left                        : 5px;
+}
+
+#MainListElementArea {
+    position                            : absolute;
+    left                                : 200px;
+    top                                 : 5px;
+    width                               : 400px;
+    height                              : 600px;
+    border                              : var(--GeneralBorder);
+}
+
+#MainListElementSection {
+    position                            : absolute;
+    left                                : 0px;
+    top                                 : var(--HeaderHeightSmall);
+    right                               : 0px;
+    bottom                              : 28px;
+    background                          : var(--GeneralBackgroundLight);
+    border-bottom                       : var(--GeneralBorder);
+}
+
+#MainBlocker {
+    position                            : absolute;
+    left                                : 10px;
+    top                                 : 10px;
+    right                               : 10px;
+    bottom                              : 30px;
+    background                          : #000000;
+    opacity                             : .5
+}
+
+#TypeListArea {
+    position                            : absolute;
+    height                              : 300px;
+    left                                : 5px;
+    width                               : 190px;
+    bottom                              : 30px;
+    border                              : solid 1px black;
+}
+
+#TypeList {
+    position                            : absolute;
+    left                                : 0px;
+    top                                 : var(--HeaderHeightSmall);
+    right                               : 0px;
+    bottom                              : 0px;
+}
+
+
+#ScreenListArea {
+    position                            : absolute;
+    top                                 : 5px;
+    left                                : 5px;
+    height                              : 300px;
+    width                               : 190px;
+    bottom                              : 35px;
+    border                              : solid 1px black;
+}
+
+.ListElement {
+    position                            : absolute;
+    left                                : 0px;
+    right                               : 0px;
+    height                              : 20px;
+    line-height                         : 20px;
+    vertical-align                      : middle;
+    text-align                          : left;
+    font-family                         : var(--GeneralFontName);
+    font-size                           : var(--GeneralFontSize);
+    padding-left                        : 5px;
+}
+
+.TypeListElement {
+    cursor                              : hand;
+    background                          : #00880030;
+    border-bottom                       : var(--GeneralBorder);
+}
+
+.TypeListElement:hover {
+    font-weight                         : bold;
+    background                          : #00880060;
+}
+
+.ScreenListElement {
+    cursor                              : hand;
+    background                          : #C0392B;
+    border-bottom                       : var(--GeneralBorder);
+    color                               : white; !important;
+}
+
+.ScreenListElement:hover {
+    font-weight                         : bold;
+    background                          : #CD6155;
+}
+
+#ScreenList {
+    position                            : absolute;
+    left                                : 0px;
+    top                                 : var(--HeaderHeightSmall);
+    right                               : 0px;
+    bottom                              : 0px;
+}
+
+#MainArea {
+    position                            : absolute;
+    top                                 : 00px;
+    left                                : 00px;
+    right                               : 00px;
+    top                                 : 80px;
+    border-bottom                       : var(--GeneralBorder);
+    border-left                         : var(--GeneralBorder);
+    border-right                        : var(--GeneralBorder);
+    bottom                              : 10PX;
+    background                          : #FBFCFC;
+}
+
+#MainHeader {
+    position                            : absolute;
+    top                                 : 0px;
+    height                              : 80px;
+    left                                : 0px;
+    right                               : 0px;
+    background                          : #888;
+    border-top-right-radius             : 15px;
+    border-top-left-radius              : 15px;
+    box-shadow                          : 0px 3px 8px rgb(0, 0, 0, .6);
+}
+
+.MessageError {
+    color                               : #800;
+}
+
+.MessageNormal {
+    color                               : var(--GeneralFontColor);
+}
+
+#MainInputArea {
+    position                            : absolute;
+    left                                : 5px;
+    right                               : 5px;
+    height                              : 20px;
+    bottom                              : 5px;
+    border                              : var(--GeneralBorder);
+}
+
+#InputArea {
+    position                            : absolute;
+    top                                 : 0px;
+    left                                : 0px;
+    width                               : 100%;
+    bottom                              : 0px;
+    background                          : var(--GeneralBackgroundLight);
+    border                              : solid 1px #EEF;
+}
+
+#MainScreenArea {
+    position                            : absolute;
+    left                                : 200px;
+    top                                 : 5px;
+    bottom                              : 30px;
+    right                               : 5px;
+    border                              : var(--GeneralBorder);
+}
+
+#MainScreenSection {
+    position                            : absolute;
+    left                                : 0px;
+    right                               : 0px;
+    bottom                              : 0px;
+    top                                 : var(--HeaderHeightSmall);
+    background                          : var(--GeneralBackgroundLight);
+}

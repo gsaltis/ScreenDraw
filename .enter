@@ -1,0 +1,4 @@
+alias sd=./screendraw
+alias m=make
+alias g='gdb screendraw'
+export PS1="\e[1;31mScreen Draw: \e[0m"

@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Initial Page</title>
+    <script src="scripts.js"></script>
+    <script src="websocketinfo.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body onload="CBSystemInitialize()" onresize="CBResizeMainScreenArea()">
+    <div id="MainBody">
+      <div id="MainHeader">
+      </div>
+      <div id="MainArea">
+        <div id="ScreenListArea">
+          <div class="HeaderSmall">Screens</div>
+          <div id="ScreenList">
+          </div>
+        </div> 
+        <div id="TypeListArea">
+          <div class="HeaderSmall">Types</div>
+          <div id="TypeList">
+          </div>
+        </div> 
+        <div id="MainScreenArea">
+          <div id="MainScreenAreaHeader"class="HeaderSmall">Current Screen</div>
+          <div id="MainScreenSection"></div>
+        </div>
+        <div id="MainInputArea">
+          <input id="InputArea" placeholder="Enter Command" onchange="CBMainInputChange();" onkeydown="CBMainInputKeyDown(event)">
+          </input>
+        </div>
+        <div id="MainListElementArea">
+          <div id="MainListElementAreaHeader" class="HeaderSmall HeaderTemp">Element : </div>
+          <div id="MainListElementSection">
+          </div>
+          <div class="PushButton" style="right:5px; bottom:5px" onmousedown="CBMainListElementAreaClose()">Close</div>
+        </div>
+      </div>
+    </div>
+    <div id="MainMessageArea">
+    </div>
+    <div id="MainBlocker">
+    </div>
+  </body>
+</html>
